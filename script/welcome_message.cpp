@@ -2,16 +2,17 @@
 
 namespace gazebo
 {
-class WorldPluginProject1 : public WorldPlugin
+class BuildMyWorld : public WorldPlugin
 {
 public:
-	WorldPluginProject1() : WorldPlugin() 
+	BuildMyWorld() : WorldPlugin() 
 	{
-		std::cout << "Wecome to my Home Office! \n";
+		std::cout << "Wecome to Ashutosh's World!\n";
+		std::cout << "This is my Home Office.\n";
 	}
 
 	void Load(physics::WorldPtr _world, sdf::ElementPtr _sdf){}
 };
 
-GZ_REGISTER_WORLD_PLUGIN(WorldPluginProject1);
+GZ_REGISTER_WORLD_PLUGIN(BuildMyWorld);
 }
